@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "id": "lifestyle-90",
+  "version": 1,
+  "name": "A little more balanced",
+  "description": "A 90-day lifestyle plan. Choose comfortable exercise intensity; these are sample routines, not treatment instructions.",
+  "timezone": "Asia/Kolkata",
+  "profile": {
+    "name": "",
+    "bio": ""
+  },
+  "categories": [
+    {
+      "id": "personal",
+      "name": "Personal",
+      "color": "#587861"
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "color": "#AF8A59"
+    }
+  ],
+  "sections": [
+    {
+      "id": "morning",
+      "name": "Morning"
+    },
+    {
+      "id": "day",
+      "name": "During the day"
+    },
+    {
+      "id": "evening",
+      "name": "Evening"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "sleep-hours",
+      "name": "Sleep duration",
+      "unit": "hours"
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "unit": "rating"
+    }
+  ],
+  "goals": [
+    {
+      "id": "movement-goal",
+      "name": "Make time for movement",
+      "description": "",
+      "archived": false,
+      "mode": "completions",
+      "target": 30,
+      "activityIds": [
+        "movement"
+      ],
+      "start": "2026-01-01",
+      "milestones": [
+        {
+          "id": "first",
+          "name": "First checkpoint",
+          "target": 15.0
+        }
+      ],
+      "end": "2026-03-31"
+    }
+  ],
+  "activities": [
+    {
+      "id": "movement",
+      "title": "Move your body",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "morning",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "weekly",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "07:30"
+        ],
+        "weekdays": [
+          1,
+          3,
+          5
+        ],
+        "end": "2026-03-31"
+      },
+      "inputs": [
+        {
+          "id": "reps",
+          "label": "Repetitions",
+          "type": "repetitions",
+          "required": true,
+          "min": 0,
+          "target": 10
+        },
+        {
+          "id": "sets",
+          "label": "Sets",
+          "type": "repetitions",
+          "required": true,
+          "min": 0,
+          "target": 2
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "prepare",
+          "title": "Prepare a clear exercise space",
+          "instructions": "Keep your planned movements within a comfortable range.",
+          "productIds": []
+        },
+        {
+          "id": "sets",
+          "title": "Perform the sets in your own workout plan",
+          "instructions": "Use the repetition and set fields below to record what you actually did.",
+          "productIds": []
+        }
+      ],
+      "productIds": [],
+      "habit": {
+        "direction": "do",
+        "cue": "At my scheduled movement time",
+        "alternative": ""
+      }
+    },
+    {
+      "id": "groom",
+      "title": "Morning grooming",
+      "description": "Work through your own morning care sequence. This sample uses a face wash and moisturizer; replace it with your actual routine.",
+      "categoryId": "personal",
+      "sectionId": "morning",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "08:00"
+        ],
+        "end": "2026-03-31"
+      },
+      "inputs": [],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "cleanse",
+          "title": "Wash your face",
+          "instructions": "Use your usual face wash according to its label, then rinse.",
+          "productIds": [
+            "face-wash"
+          ]
+        },
+        {
+          "id": "dry",
+          "title": "Pat your face dry",
+          "instructions": "Use a clean towel rather than rubbing.",
+          "productIds": []
+        },
+        {
+          "id": "moisturize",
+          "title": "Apply your usual moisturizer",
+          "instructions": "Use the amount specified by your product or established routine.",
+          "productIds": [
+            "moisturizer"
+          ]
+        }
+      ],
+      "productIds": [
+        "face-wash",
+        "moisturizer"
+      ]
+    },
+    {
+      "id": "skin",
+      "title": "Evening skincare",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "21:00"
+        ],
+        "end": "2026-03-31"
+      },
+      "inputs": [],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "evening-cleanse",
+          "title": "Follow your evening cleansing step",
+          "instructions": "Use the product already in your routine.",
+          "productIds": [
+            "face-wash"
+          ]
+        },
+        {
+          "id": "evening-moisturize",
+          "title": "Follow your evening moisturizer step",
+          "instructions": "Use your own product instructions.",
+          "productIds": [
+            "moisturizer"
+          ]
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "nutrition",
+      "title": "Include a balanced meal",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "day",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [],
+        "end": "2026-03-31"
+      },
+      "inputs": [
+        {
+          "id": "meal",
+          "label": "Meal note",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "reminder": {
+        "enabled": false,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "planned-meal",
+          "title": "Choose the balanced meal you planned",
+          "instructions": "Use your own food preferences and existing dietary requirements.",
+          "productIds": []
+        },
+        {
+          "id": "phone-away",
+          "title": "Put the phone aside while eating",
+          "instructions": "Record a short meal note if useful.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "sleep",
+      "title": "Record last night\u2019s sleep",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "morning",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "08:15"
+        ],
+        "end": "2026-03-31"
+      },
+      "inputs": [
+        {
+          "id": "hours",
+          "label": "Hours slept",
+          "type": "number",
+          "required": true,
+          "unit": "hours",
+          "min": 0,
+          "max": 24,
+          "metricId": "sleep-hours"
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "recall",
+          "title": "Recall last night\u2019s approximate sleep and wake times",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "log-hours",
+          "title": "Enter your actual hours slept below",
+          "instructions": "An estimate is fine; do not enter the number you wished to sleep.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "energy-check",
+      "title": "Energy check",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "day",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [],
+        "end": "2026-03-31"
+      },
+      "inputs": [
+        {
+          "id": "rating",
+          "label": "Energy",
+          "type": "rating",
+          "required": true,
+          "min": 1,
+          "max": 5,
+          "metricId": "energy"
+        }
+      ],
+      "reminder": {
+        "enabled": false,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "rate-energy",
+          "title": "Choose your current energy rating below",
+          "instructions": "Use the same 1\u20135 scale each time.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "review",
+      "title": "Weekly reflection",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "weekly",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "18:00"
+        ],
+        "weekdays": [
+          7
+        ],
+        "end": "2026-03-31"
+      },
+      "inputs": [
+        {
+          "id": "reflection",
+          "label": "What helped this week?",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "review-records",
+          "title": "Look at this week\u2019s completion and measurements",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "adjust-one",
+          "title": "Choose one realistic adjustment for next week",
+          "instructions": "Write it in the reflection field below.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "avoid-unplanned-scroll",
+      "title": "Avoid unplanned short-video scrolling",
+      "description": "Sample avoidance habit. Replace its scope with a clear boundary that you actually choose.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "20:30"
+        ],
+        "end": "2026-03-31"
+      },
+      "inputs": [],
+      "steps": [
+        {
+          "id": "remove-cue",
+          "title": "Put the distracting app out of immediate reach",
+          "instructions": "Optional support step; this alone does not confirm the day\u2019s result.",
+          "productIds": []
+        },
+        {
+          "id": "alternative",
+          "title": "Choose your replacement action when the urge appears",
+          "instructions": "For example, return to the planned reading or study task.",
+          "productIds": []
+        }
+      ],
+      "productIds": [],
+      "habit": {
+        "direction": "avoid",
+        "cue": "When I reach for short videos outside a planned break",
+        "alternative": "Return to the next concrete step in my plan."
+      },
+      "reminder": {
+        "enabled": false,
+        "minutesBefore": 0
+      }
+    }
+  ],
+  "dashboard": {
+    "widgets": [
+      "current",
+      "goals",
+      "metrics",
+      "reflection",
+      "reminders"
+    ]
+  },
+  "theme": "system",
+  "review": {
+    "enabled": true,
+    "weekday": 7,
+    "time": "18:00"
+  },
+  "dailyReminder": {
+    "enabled": true,
+    "time": "08:00"
+  },
+  "products": [
+    {
+      "id": "face-wash",
+      "name": "Your usual face wash",
+      "brand": "",
+      "category": "Grooming",
+      "description": "Example entry. Replace it with the exact item you already use when making your own plan.",
+      "usageNotes": "Follow the label and your established routine."
+    },
+    {
+      "id": "moisturizer",
+      "name": "Your usual moisturizer",
+      "brand": "",
+      "category": "Grooming",
+      "description": "Example entry. Replace it with the exact item you already use when making your own plan.",
+      "usageNotes": "Follow the label and your established routine."
+    }
+  ]
+}

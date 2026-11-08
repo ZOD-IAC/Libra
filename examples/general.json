@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "id": "everyday",
+  "version": 1,
+  "name": "Room for the everyday",
+  "description": "A small plan with room to adjust.",
+  "timezone": "Asia/Kolkata",
+  "profile": {
+    "name": "",
+    "bio": ""
+  },
+  "categories": [
+    {
+      "id": "personal",
+      "name": "Personal",
+      "color": "#587861"
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "color": "#AF8A59"
+    }
+  ],
+  "sections": [
+    {
+      "id": "morning",
+      "name": "Morning"
+    },
+    {
+      "id": "day",
+      "name": "During the day"
+    },
+    {
+      "id": "evening",
+      "name": "Evening"
+    }
+  ],
+  "metrics": [],
+  "goals": [
+    {
+      "id": "reading",
+      "name": "Make space for reading",
+      "description": "",
+      "archived": false,
+      "mode": "completions",
+      "target": 20,
+      "activityIds": [
+        "read"
+      ],
+      "start": "2026-01-01",
+      "milestones": [
+        {
+          "id": "first",
+          "name": "First checkpoint",
+          "target": 10.0
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "morning",
+      "title": "A quiet start",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "morning",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "08:00"
+        ]
+      },
+      "inputs": [],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "look-at-day",
+          "title": "Review today\u2019s scheduled activities",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "choose-priority",
+          "title": "Choose one activity to prioritize",
+          "instructions": "Keep the choice realistic for today.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "house",
+      "title": "Reset one space",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "day",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "weekly",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [],
+        "weekdays": [
+          2,
+          6
+        ]
+      },
+      "inputs": [],
+      "reminder": {
+        "enabled": false,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "choose-space",
+          "title": "Choose one small surface to reset",
+          "instructions": "For example, your desk rather than the entire room.",
+          "productIds": []
+        },
+        {
+          "id": "put-away",
+          "title": "Put items back in their usual places",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "finish-reset",
+          "title": "Leave the surface ready for its next use",
+          "instructions": "",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "read",
+      "title": "Read something enjoyable",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "20:00"
+        ]
+      },
+      "inputs": [
+        {
+          "id": "minutes",
+          "label": "Reading time",
+          "type": "duration",
+          "required": true,
+          "min": 0,
+          "unit": "minutes"
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "open-book",
+          "title": "Open your current book at the saved page",
+          "instructions": "Use the book listed in Products.",
+          "productIds": [
+            "current-book"
+          ]
+        },
+        {
+          "id": "read",
+          "title": "Read for the amount of time you have available",
+          "instructions": "Record actual reading minutes below.",
+          "productIds": []
+        }
+      ],
+      "productIds": [],
+      "habit": {
+        "direction": "do",
+        "cue": "At my evening reading time",
+        "alternative": ""
+      }
+    },
+    {
+      "id": "journal",
+      "title": "A line about today",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "21:00"
+        ]
+      },
+      "inputs": [
+        {
+          "id": "note",
+          "label": "What stood out?",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "notice",
+          "title": "Recall one event that stood out today",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "reflect",
+          "title": "Write one line about it in the field below",
+          "instructions": "",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "sleep",
+      "title": "Begin winding down",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "22:00"
+        ]
+      },
+      "inputs": [],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "phone-aside",
+          "title": "Put the phone away from the sleeping area",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "prepare-morning",
+          "title": "Prepare one thing that will make tomorrow morning easier",
+          "instructions": "",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "monthly",
+      "title": "Monthly household review",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "day",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "monthly",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "10:00"
+        ],
+        "monthDays": [
+          1
+        ]
+      },
+      "inputs": [],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "review-home",
+          "title": "Check which household tasks remain unfinished",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "choose-next",
+          "title": "Schedule one small task for the coming week",
+          "instructions": "",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "avoid-unplanned-scroll",
+      "title": "Avoid unplanned short-video scrolling",
+      "description": "Sample avoidance habit. Replace its scope with a clear boundary that you actually choose.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "20:30"
+        ]
+      },
+      "inputs": [],
+      "steps": [
+        {
+          "id": "remove-cue",
+          "title": "Put the distracting app out of immediate reach",
+          "instructions": "Optional support step; this alone does not confirm the day\u2019s result.",
+          "productIds": []
+        },
+        {
+          "id": "alternative",
+          "title": "Choose your replacement action when the urge appears",
+          "instructions": "For example, return to the planned reading or study task.",
+          "productIds": []
+        }
+      ],
+      "productIds": [],
+      "habit": {
+        "direction": "avoid",
+        "cue": "When I reach for short videos outside a planned break",
+        "alternative": "Return to the next concrete step in my plan."
+      },
+      "reminder": {
+        "enabled": false,
+        "minutesBefore": 0
+      }
+    }
+  ],
+  "dashboard": {
+    "widgets": [
+      "current",
+      "goals",
+      "metrics",
+      "reflection",
+      "reminders"
+    ]
+  },
+  "theme": "system",
+  "review": {
+    "enabled": true,
+    "weekday": 7,
+    "time": "18:00"
+  },
+  "dailyReminder": {
+    "enabled": true,
+    "time": "08:00"
+  },
+  "products": [
+    {
+      "id": "current-book",
+      "name": "Your current book",
+      "brand": "",
+      "category": "Reading",
+      "description": "Example entry. Replace it with the exact item you already use when making your own plan.",
+      "usageNotes": "Replace this entry with the exact book and your saved page."
+    }
+  ]
+}

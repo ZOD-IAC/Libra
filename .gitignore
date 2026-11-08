@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+dist/
+coverage/
+android/
+ios/
+*.keystore
+*.jks
+*.p12
+*.pem
+.env*
+credentials.json
+local.properties
+*.apk
+*.aab
+.DS_Store

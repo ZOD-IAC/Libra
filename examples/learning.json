@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "id": "learning",
+  "version": 1,
+  "name": "Practice with intention",
+  "description": "A small plan with room to adjust.",
+  "timezone": "Asia/Kolkata",
+  "profile": {
+    "name": "",
+    "bio": ""
+  },
+  "categories": [
+    {
+      "id": "personal",
+      "name": "Personal",
+      "color": "#587861"
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "color": "#AF8A59"
+    }
+  ],
+  "sections": [
+    {
+      "id": "morning",
+      "name": "Morning"
+    },
+    {
+      "id": "day",
+      "name": "During the day"
+    },
+    {
+      "id": "evening",
+      "name": "Evening"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "focus-min",
+      "name": "Focused practice",
+      "unit": "minutes"
+    }
+  ],
+  "goals": [
+    {
+      "id": "practice-goal",
+      "name": "Build a practice rhythm",
+      "description": "",
+      "archived": false,
+      "mode": "sum",
+      "target": 600,
+      "activityIds": [
+        "study"
+      ],
+      "start": "2026-01-01",
+      "milestones": [
+        {
+          "id": "first",
+          "name": "First checkpoint",
+          "target": 300.0
+        }
+      ],
+      "inputId": "minutes"
+    }
+  ],
+  "activities": [
+    {
+      "id": "study",
+      "title": "Focused study",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "day",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "09:00"
+        ]
+      },
+      "inputs": [
+        {
+          "id": "seconds",
+          "label": "Focus timer",
+          "type": "timer",
+          "required": true,
+          "unit": "seconds",
+          "min": 0
+        },
+        {
+          "id": "minutes",
+          "label": "Study minutes",
+          "type": "duration",
+          "required": true,
+          "unit": "minutes",
+          "min": 0,
+          "target": 30,
+          "metricId": "focus-min"
+        },
+        {
+          "id": "notes",
+          "label": "What did you learn?",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "choose-topic",
+          "title": "Choose one concrete topic for this session",
+          "instructions": "Write a narrow question you want to answer.",
+          "productIds": [
+            "learning-resource"
+          ]
+        },
+        {
+          "id": "practice",
+          "title": "Work through one example yourself",
+          "instructions": "Use the timer below. Try it before copying a solution.",
+          "productIds": []
+        },
+        {
+          "id": "review",
+          "title": "Summarize what you understood",
+          "instructions": "Record actual study minutes and a short note below.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "code",
+      "title": "Solve one coding problem",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "day",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "weekly",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "11:00"
+        ],
+        "weekdays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "inputs": [
+        {
+          "id": "difficulty",
+          "label": "Difficulty",
+          "type": "choice",
+          "required": true,
+          "choices": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ]
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "understand",
+          "title": "Read the problem and constraints",
+          "instructions": "Check one example by hand.",
+          "productIds": []
+        },
+        {
+          "id": "solve",
+          "title": "Write and test your own solution",
+          "instructions": "Include an edge case.",
+          "productIds": []
+        },
+        {
+          "id": "explain",
+          "title": "Explain why the solution works",
+          "instructions": "Record the difficulty below.",
+          "productIds": []
+        }
+      ],
+      "productIds": [],
+      "habit": {
+        "direction": "do",
+        "cue": "After my planned study block",
+        "alternative": ""
+      }
+    },
+    {
+      "id": "read",
+      "title": "Read a few pages",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "20:30"
+        ]
+      },
+      "inputs": [
+        {
+          "id": "pages",
+          "label": "Pages",
+          "type": "repetitions",
+          "required": true,
+          "min": 0,
+          "target": 5
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "open-reading",
+          "title": "Open the next section of your chosen resource",
+          "instructions": "Use your saved reading position.",
+          "productIds": [
+            "learning-resource"
+          ]
+        },
+        {
+          "id": "read-pages",
+          "title": "Read and record the actual page count",
+          "instructions": "Choose a sustainable amount, rather than rushing to a target.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "review",
+      "title": "Review the week",
+      "description": "Adjust the target and schedule to fit your day.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "weekly",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "18:00"
+        ],
+        "weekdays": [
+          7
+        ]
+      },
+      "inputs": [
+        {
+          "id": "review-note",
+          "label": "One lesson to carry forward",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "reminder": {
+        "enabled": true,
+        "minutesBefore": 0
+      },
+      "steps": [
+        {
+          "id": "look-back",
+          "title": "Review this week\u2019s practice and unfinished questions",
+          "instructions": "",
+          "productIds": []
+        },
+        {
+          "id": "next-focus",
+          "title": "Choose one specific topic for next week",
+          "instructions": "Write the lesson you want to carry forward.",
+          "productIds": []
+        }
+      ],
+      "productIds": []
+    },
+    {
+      "id": "avoid-unplanned-scroll",
+      "title": "Avoid unplanned short-video scrolling",
+      "description": "Sample avoidance habit. Replace its scope with a clear boundary that you actually choose.",
+      "categoryId": "personal",
+      "sectionId": "evening",
+      "goalIds": [],
+      "priority": "normal",
+      "paused": false,
+      "schedule": {
+        "frequency": "daily",
+        "start": "2026-01-01",
+        "interval": 1,
+        "times": [
+          "20:30"
+        ]
+      },
+      "inputs": [],
+      "steps": [
+        {
+          "id": "remove-cue",
+          "title": "Put the distracting app out of immediate reach",
+          "instructions": "Optional support step; this alone does not confirm the day\u2019s result.",
+          "productIds": []
+        },
+        {
+          "id": "alternative",
+          "title": "Choose your replacement action when the urge appears",
+          "instructions": "For example, return to the planned reading or study task.",
+          "productIds": []
+        }
+      ],
+      "productIds": [],
+      "habit": {
+        "direction": "avoid",
+        "cue": "When I reach for short videos outside a planned break",
+        "alternative": "Return to the next concrete step in my plan."
+      },
+      "reminder": {
+        "enabled": false,
+        "minutesBefore": 0
+      }
+    }
+  ],
+  "dashboard": {
+    "widgets": [
+      "current",
+      "goals",
+      "metrics",
+      "reflection",
+      "reminders"
+    ]
+  },
+  "theme": "system",
+  "review": {
+    "enabled": true,
+    "weekday": 7,
+    "time": "18:00"
+  },
+  "dailyReminder": {
+    "enabled": true,
+    "time": "08:00"
+  },
+  "products": [
+    {
+      "id": "learning-resource",
+      "name": "The course or book you selected",
+      "brand": "",
+      "category": "Learning material",
+      "description": "Example entry. Replace it with the exact item you already use when making your own plan.",
+      "usageNotes": "Replace this entry with your actual resource and next chapter or lesson."
+    }
+  ]
+}
